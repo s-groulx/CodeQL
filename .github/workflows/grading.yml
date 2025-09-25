@@ -17,7 +17,7 @@ jobs:
         uses: ./.github/actions/local-action
 
       - name: Grading results
-        uses: githubtraining/looking-glass-action@v1.0.0
+        uses: githubtraining/looking-glass-action@v1
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           feedback: ${{ steps.events.outputs.reports }}
